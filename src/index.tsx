@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { RouterProvider, createBrowserRouter, Link, Outlet } from 'react-router-dom';
-import { Register } from './Register.tsx';
-import { Login } from './Login.tsx';
-import { UpdatePassword } from './UpdatePassword.tsx';
-import { ErrorPage } from './ErrorPage.tsx';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Register } from './page/register/Register.tsx';
+import { Login } from './page/login/Login.tsx';
+import { UpdatePassword } from './page/update_password/UpdatePassword.tsx';
+import { ErrorPage } from './page/error/ErrorPage.tsx';
 
 
 const routes = [
