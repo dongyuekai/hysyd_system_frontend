@@ -58,7 +58,6 @@ export function Register() {
     }
   }
 
-
   return <div id="register-container">
     <h1>会议室预订系统</h1>
     <Form
@@ -111,16 +110,14 @@ export function Register() {
         <Input />
       </Form.Item>
 
-      <div className='captcha-wrapper'>
-        <Form.Item
-          label="验证码"
-          name="captcha"
-          rules={[{ required: true, message: '请输入验证码!' }]}
-        >
-          <Input />
-        </Form.Item>
+      <Form.Item
+        label="验证码"
+        name="captcha"
+        rules={[{ required: true, message: '请输入验证码!' }]}
+      >
+        <Input />
         <Button type="primary" onClick={sendCaptcha}>发送验证码</Button>
-      </div>
+      </Form.Item>
 
       <Form.Item
         {...layout2}

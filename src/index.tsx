@@ -4,9 +4,8 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Register } from './page/register/Register.tsx';
 import { Login } from './page/login/Login.tsx';
-import { UpdatePassword } from './page/update_password/UpdatePassword.tsx';
+import { UpdatePasswordCom } from './page/update_password/UpdatePassword.tsx';
 import { ErrorPage } from './page/error/ErrorPage.tsx';
-
 
 const routes = [
   {
@@ -24,7 +23,7 @@ const routes = [
   },
   {
     path: "update_password",
-    element: <UpdatePassword />,
+    element: <UpdatePasswordCom />,
   }
 ];
 const router = createBrowserRouter(routes);
