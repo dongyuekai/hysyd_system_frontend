@@ -6,12 +6,20 @@ import { Register } from './page/register/Register.tsx';
 import { Login } from './page/login/Login.tsx';
 import { UpdatePasswordCom } from './page/update_password/UpdatePassword.tsx';
 import { ErrorPage } from './page/error/ErrorPage.tsx';
+import { First } from './page/first/first.tsx';
+import { UpdateInfo } from './page/update_info/UpdateInfo.tsx';
 
 const routes = [
   {
     path: "/",
-    element: <div>index</div>,
+    element: <First />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "update_info",
+        element: <UpdateInfo />
+      }
+    ]
   },
   {
     path: "login",
