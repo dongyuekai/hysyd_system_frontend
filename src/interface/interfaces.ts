@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig } from "axios";
 import { message } from "antd";
-import { RegisterUser } from "../page/register/Register";
-import { UpdatePasswordInterface } from "../page/update_password/UpdatePassword";
-import { UserInfo } from "../page/update_info/UpdateInfo";
+import { RegisterUser } from "../page/register/Register.tsx";
+import { UpdatePasswordInterface } from "../page/update_password/UpdatePassword.tsx";
+import { UserInfo } from "../page/update_info/UpdateInfo.tsx";
 
 const axiosInstance = axios.create({
   baseURL: "http://localhost:3005/",
