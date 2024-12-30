@@ -4,6 +4,7 @@ import { Button, Form, Input, message } from 'antd';
 import './update_info.css';
 import { useNavigate } from 'react-router-dom';
 import { getUserInfo, updateInfo, updateUserInfoCaptcha } from '../../interface/interfaces.ts';
+import { HeadPicUpload } from '../HeadPicUpload.tsx';
 
 export interface UserInfo {
   headPic: string;
@@ -72,7 +73,7 @@ export function UpdateInfo() {
             { required: true, message: '请输入头像!' },
           ]}
         >
-          <Input />
+          <HeadPicUpload />
         </Form.Item>
 
         <Form.Item
